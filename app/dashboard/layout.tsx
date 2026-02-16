@@ -3,11 +3,13 @@
 import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { LayoutDashboard, LogOut, TrendingDown, TrendingUp, Menu, X, History, Package, Users, AlertCircle, Loader2 } from 'lucide-react';
+import { LayoutDashboard, LogOut, TrendingDown, TrendingUp, Menu, X, History, Package, Users, AlertCircle, Loader2, BarChart3, ShoppingCart } from 'lucide-react';
 import { DashboardProvider, useDashboard } from './DashboardContext';
 
 const navItems = [
   { href: '/dashboard', label: 'Início', icon: LayoutDashboard },
+  { href: '/dashboard/graficos', label: 'Gráficos de uso', icon: BarChart3 },
+  { href: '/dashboard/lista-pedido', label: 'Lista de pedido', icon: ShoppingCart },
   { href: '/dashboard/produtos', label: 'Produtos', icon: Package },
   { href: '/dashboard/funcionarios', label: 'Funcionários', icon: Users },
   { href: '/dashboard/retiradas', label: 'Registrar Retiradas', icon: TrendingDown },
