@@ -1,0 +1,5 @@
+{
+  "name": "CleanStock",
+  "description": "Inventory management system for cleaning supplies to track usage and prevent waste.",
+  "requestFramePermissions": []
+}
